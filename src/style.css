@@ -17,22 +17,8 @@ h1 {
 .recent-scores {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding: 4rem 0 2rem 2rem;
-}
-
-ul {
-  border: 3px #000 solid;
-  margin-top: 20px;
-}
-
-li {
-  list-style: none;
-  padding-left: 4px;
-}
-
-.gray-list {
-  background-color: lightgray;
 }
 
 .recent-button {
@@ -57,9 +43,38 @@ input {
 
 .btn1 {
   width: 100px;
+  border: 1px solid;
+  box-shadow: 5px 5px #8888;
 }
 
 .btn2 {
   width: 100px;
   margin-left: 68%;
+  border: 1px solid;
+  box-shadow: 5px 5px #8888;
+}
+
+.recent-score {
+  width: 100%;
+  border: 3px black solid;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.recent-score p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  line-break: anywhere;
+}
+
+.recent-score p:nth-child(odd) {
+  background-color: yellow;
+}
+
+.recent-score p:nth-child(even) {
+  background-color: goldenrod;
 }
