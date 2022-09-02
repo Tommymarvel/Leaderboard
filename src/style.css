@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +8,21 @@
 
 body {
   background-color: #fff;
+  font-family: "lato", sans-serif;
 }
 
 h1 {
   font-size: 3rem;
   margin: 20px 0 10px 15px;
   font-weight: 800;
+  text-align: center;
+}
+
+.user-name-field,
+.user-score-field {
+  border: 2px rgb(11, 251, 11) solid;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .recent-scores {
@@ -54,9 +65,18 @@ input {
   box-shadow: 5px 5px #8888;
 }
 
+.btn2:hover {
+  background-color: rgb(11, 251, 11);
+}
+
+.btn1:hover {
+  width: 150px;
+  background-color: rgb(11, 251, 11);
+}
+
 .recent-score {
   width: 100%;
-  border: 3px black solid;
+  border: 3px rgb(11, 251, 11) solid;
   border-radius: 8px;
   margin-top: 20px;
 }
@@ -71,10 +91,10 @@ input {
   line-break: anywhere;
 }
 
-.recent-score p:nth-child(odd) {
-  background-color: yellow;
+.recent-score p:nth-child(even) {
+  background-color: whitesmoke;
 }
 
-.recent-score p:nth-child(even) {
-  background-color: goldenrod;
+.recent-score p:nth-child(odd) {
+  background-color: rgb(11, 251, 11);
 }
